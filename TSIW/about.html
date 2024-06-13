@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias e Sistemas de Informação para Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>    
+    <section class="header2">
+        <nav>
+            <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <b>
+                        <li><a href="index.html">PAGINA INICIAL</a></li>
+                        <li><a href="eroom.html">ESCAPE ROOM</a></li>
+                        <li><a href="signin.html">INICIAR SESSÃO</a></li>
+                        <li><a href="contact.html">CONTACTE-NOS</a></li>
+                    </b>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>SOBRE CURSO</h1>
+        </div>
+    </section>
+
+    <section class="access">
+        <div>
+            <h3>Apresentação</h3>
+            <p>A licenciatura oferece uma visão moderna da Web, focando-se no design e desenvolvimento de produtos e software. <br>
+            Os estudantes aprendem sobre serviços cloud, computação móvel, plataformas Web e e-commerce, além de ergonomia, <br>
+            design de interação, usabilidade, e user experience.<br>
+
+            Distinguida pela combinação de desenvolvimento de produtos e design de interfaces, a licenciatura teve 0% de desemprego em 2019.
+            <br>O curso é prático, com projetos desde o 1.º ano e forte ligação ao setor empresarial, 
+            incluindo parceiros como <br>IOTech, ikuTeam, Helppier, e-Goi, e Nonius Software.<br><br><br><br><br></p>
+        </div>
+        <div>
+            Regime de estudos<br>
+            Diurno<br><br>
+            Coordenador/Diretor de curso<br> 
+            Ricardo Alexandre Peixoto Queirós<br><br> 
+            Acreditação do ciclo de estudos<br>
+            Acreditado por: 6 ano(s) em 26/06/2020 Consultar relatórios em https://www.a3es.pt/pt/resultados-acreditacao/tecnologias-e-sistemas-de-informacao-para-web-0<br><br> 
+            Área CNAEF:<br>
+            480 Informática *<br><br>
+            Registo DGES Número:<br> 
+            R/A-Cr 98/2014/AL01 de 26-06-2020 Data: 01/01/2001<br><br> 
+            Publicação em Diário da República<br>
+            N.º Despacho/Portaria: Despacho n.º 8282/2020 (2.ª Série), n.º 166 Data: 26/06/2020
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>Pode nos seguir também nas redes sociais<br>para acompanhar melhor:</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Obrigado por visitar o site</p>
+    </section>
+
+<!--javascript navbar responsivo-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

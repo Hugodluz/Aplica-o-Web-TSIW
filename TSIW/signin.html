@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias e Sistemas de Informação para Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>    
+    <section class="header2">
+        <nav>
+            <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <b>
+                        <li><a href="index.html">PAGINA INICIAL</a></li>
+                        <li><a href="eroom.html">ESCAPE ROOM</a></li>
+                        <li><a href="signin.html">INICIAR SESSÃO</a></li>
+                        <li><a href="contact.html">CONTACTE-NOS</a></li>
+                    </b>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>INICIAR SESSÃO</h1>
+        </div>
+    </section>
+
+    <section class="inputgroup">
+        <form action="/login" method="post">
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" autocomplete="off">
+            </div>
+            <div class="input">
+                <label for="password">Palavra-passe</label>
+                <input type="text" id="password" name="password" required="" autocomplete="off">
+                <br><br>
+            </div>
+            <button class="register-btn" type="submit">Conecte-se</button>
+        </form>
+    </section>
+
+    <section class="register">
+        <p>Ainda ñ tem conta<br>Faça o seu registro aqui</p>
+        <a href="register.html" class="register-btn"><b>Criar Conta</b></a>
+    </section>
+
+    <section class="footer">
+        <p>Pode nos seguir também nas redes sociais<br>para acompanhar melhor:</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Obrigado por visitar o site</p>
+    </section>
+
+<!--javascript navbar responsivo-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

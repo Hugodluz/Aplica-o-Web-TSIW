@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias e Sistemas de Informação para Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <b>
+                        <li><a href="index.html">PAGINA INICIAL</a></li>
+                        <li><a href="eroom.html">ESCAPE ROOM</a></li>
+                        <li><a href="signin.html">INICIAR SESSÃO</a></li>
+                        <li><a href="contact.html">CONTACTE-NOS</a></li>
+                    </b>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>ESMAD</h1>
+            <p>Transforme seu futuro com a Licenciatura em Tecnologias e Sistemas de Informação para Web:<br>
+            onde inovação encontra oportunidade no setor de TI</p>
+            <a href="" class="hero-btn"><b>CLIQUE E SAIBÁ MAIS</b></a>
+        </div>
+    </section>
+
+    <section class="curiosidade">
+        <h1>PEQUENAS CURIOSIDADES</h1>
+        <p>Algumas curiosidades sobre o curso.</p>
+        <div class="row">
+            <div class="curiosidade-col">
+                <h3>Alta Demanda no Mercado</h3>
+                <p> O setor de TI e web é um dos que mais cresce, garantindo diversas oportunidades 
+                de emprego e carreira em empresas de tecnologia, startups e grandes corporações.</p>
+            </div>
+            <div class="curiosidade-col">
+                <h3>Desenvolvimento de Habilidades Essenciais</h3>
+                <p>Adquira conhecimentos práticos e teóricos em programação, desenvolvimento web, 
+                segurança da informação e comunicação digital, essenciais para se destacar na área de TI.</p>
+            </div>
+            <div class="curiosidade-col">
+                <h3>Inovação e Criatividade</h3>
+                <p>Trabalhe em projetos que incentivam a criatividade e a inovação, desenvolvendo
+                soluções tecnológicas que impactam positivamente empresas e a sociedade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <h1>SOBRE O CURSO</h1>
+        <p>Informçoes mais aprofundadas sobre o curso clique e saiba mais</p>
+        <div class="row">
+            <div class="sobre-col">
+                <a href="saidas.html">
+                    <img src="imagens/saidas.png">
+                    <div class="layer">
+                        <h3>SAIDAS PROFISSIONAIS</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="sobre-col">
+                <a href="estudo.html">
+                    <img src="imagens/planos.png">
+                    <div class="layer">
+                        <h3>PLANOS DE ESTUDO</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="sobre-col">
+                <a href="alumni.html">
+                    <img src="imagens/alumni.png">
+                    <div class="layer">
+                        <h3>TESTEMUNHOS ALUMNI</h3>
+                    </div>
+                </a>    
+            </div>
+        </div>    
+    </section>
+
+    <section class="esmad">
+        <h1>SOBRE UNIVERSIDADE</h1>
+        <P>A Escola Superior de Media Artes e Design (ESMAD) do Politécnico do Porto (P.PORTO)<br>assume-se como uma
+        referência nacional e internacional na formação de profissionais competitivos, criativos e<br>inovadores
+        nos domínios do Cinema, Design, Fotografia, Multimédia e Web.</P>
+    </section>
+
+    <section class="cta">
+        <h1>Interessado em um Futuro Brilhante na Area de TI?<br>Contacte-nos e se Inscreva  na Licenciatura de TSIW</h1>
+        <a href="" class="hero-btn"><b>Contacte-nos</b></a>
+    </section>
+
+    <section class="footer">
+        <p>Pode nos seguir também nas redes sociais<br>para acompanhar melhor:</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Obrigado por visitar o site</p>
+    </section>
+
+<!--javascript navbar responsivo-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
